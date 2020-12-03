@@ -45,7 +45,7 @@ ADD ./etc-rsyslog.d-50-default.conf /etc/rsyslog.d/50-default.conf
 # ---------------------------
 
 RUN wget https://download.pureftpd.org/pub/pure-ftpd/releases/pure-ftpd-1.0.47.tar.bz2
-RUN tar -xzf pure-ftpd-1.0.46.tar.gz
+RUN tar -xvf pure-ftpd-1.0.47.tar.bz2
 
 RUN apt-get build-dep -y pure-ftpd
 
