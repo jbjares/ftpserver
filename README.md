@@ -17,7 +17,7 @@ Example of ftp session:
 	220-Local time is now 18:58. Server port: 21.
 	220-IPv6 connections are also welcome on this server.
 	220 You will be disconnected after 15 minutes of inactivity.
-	Name (192.168.59.103:jonas): someone
+	Name (192.168.59.103:jbjares): someone
 	331 User someone OK. Password required
 	Password: 
 	230 OK. Current directory is /home/someone

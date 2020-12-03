@@ -9,7 +9,7 @@
 
 
 FROM ubuntu:14.04
-MAINTAINER Jonas Colmsjö "jonas@gizur.com"
+MAINTAINER  "jbjares@gmail.com"
 
 RUN apt-get update
 RUN apt-get upgrade -y
@@ -44,7 +44,7 @@ ADD ./etc-rsyslog.d-50-default.conf /etc/rsyslog.d/50-default.conf
 # Download and build pure-ftp
 # ---------------------------
 
-RUN wget http://download.pureftpd.org/pub/pure-ftpd/releases/pure-ftpd-1.0.46.tar.gz
+RUN wget https://download.pureftpd.org/pub/pure-ftpd/releases/pure-ftpd-1.0.47.tar.bz2
 RUN tar -xzf pure-ftpd-1.0.46.tar.gz
 
 RUN apt-get build-dep -y pure-ftpd
@@ -74,8 +74,8 @@ RUN echo "10" > /etc/pure-ftpd/conf/MaxClientsNumber
 # Setup users, add as many as needed
 # ----------------------------------
 
-RUN useradd -m -s /bin/bash someone
-RUN echo someone:password |chpasswd
+RUN useradd -m -s /bin/bash admin
+RUN echo admin:password |mlflow@123
 
 
 #
